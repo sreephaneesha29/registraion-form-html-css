@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">
+            ThePhan33sh Survey Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to help us improve
+        </p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name<input type="text" name="Name" id="name" placeholder="Your Name"
+                 required></label>
+            <label for="email" id="email-label">E-Mail<input type="email" name="Email" id="email"
+                    placeholder="Your E-Mail" required></label>
+            <label for="number" id="number-label">Age<input type="number" name="Number" id="number" min="18" max="99"
+                 placeholder="Age"></label>
+            <label>
+                Which option best describes your current role?
+                <select name="DropDown" id="dropdown" required>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Others">Others</option>
+                </select>
+            </label>
+            <label id="radio">
+                Would You Recommend To a Friend?
+                <label for="rad1"><input type="radio" name="rateing" id="rad1" value="yes" checked>Yes</label>
+                <label for="rad2"><input type="radio" name="rateing" id="rad2" value="no">No</label>
+                <label for="rad3"><input type="radio" name="rateing" id="rad3" value="dono">Don't No</label>
+            </label>
+            <label id="check">
+                What would you like to see improved?
+                <label><input type="checkbox" value="projects">Projects</label>
+                <label><input type="checkbox" value="opensource">Open-Source</label>
+                <label><input type="checkbox" value="dsa">DSA</label>
+            </label>
+            <label for="note">Any comments or suggestions?
+                <textarea name="comments" id="note" cols="30" rows="10" placeholder="Enter Your Comments"></textarea>
+            </label>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

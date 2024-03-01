@@ -1,0 +1,102 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI';
+}
+body{
+    background:linear-gradient(rgb(217, 219, 220),rgb(204, 244, 255));
+  
+   
+}
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 8px;
+   gap: 15px;
+   background-color: rgba(28, 1, 54, 0.797);
+   color: rgb(255, 255, 255);
+   position: sticky;
+   top: 0;
+   text-align: center;
+}
+main form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    background: rgba(14, 14, 84, 0.719);
+    color: white;
+   max-width: 50%;
+   margin: 30px auto;
+   padding: 2rem;
+   border-radius: 10px;
+   font-size: 1.4rem;
+}
+label{
+    width: 100%;
+}
+#name,#email,#number,#dropdown{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4rem;
+}
+#radio label{
+    display: block;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+#radio label input{
+    margin-right:5px;
+    font-size: 1.4rem;
+    
+}
+#check label{
+    display: block;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+#check label input{
+    margin-right:5px;
+    font-size: 1.4rem;
+}
+
+#note{
+    width: 100%;
+    margin-top: 10px;
+    resize: vertical;
+    min-height: 150px;
+    padding: 8px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+#submit{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 79, 89);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+input[type='radio']{
+    width: 16px;
+    height: 16px;
+}
+input[type='checkbox']{
+    width: 16px;
+    height: 16px;
+}
+
+@media only screen and (max-width:900px) {
+    main form{
+        max-width: 90%;
+    }
+}
